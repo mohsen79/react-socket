@@ -1,0 +1,110 @@
+.chatRoom {
+  width: 70vw;
+  height: 70vh;
+  background: lightgreen;
+  margin: 6.5rem auto;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chatRoom .header {
+  width: 100%;
+  height: 10%;
+  background: pink;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatRoom .body {
+  width: 100%;
+  height: 80%;
+  background-color: purple;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.body .messageBox {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.body .reverseMessageBox {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.messageBox .senderInfo {
+  border-radius: 20px;
+  background-color: lightgreen;
+  width: fit-content;
+  padding: 0.5rem 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.reverseMessageBox .senderInfo {
+  border-radius: 20px;
+  background-color: lightblue;
+  width: fit-content;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.senderInfo .nameTitle {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.senderInfo .dateSection {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.chatRoom .footer {
+  width: 100%;
+  height: 10%;
+  background: gray;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer form {
+  width: 100%;
+  display: flex;
+}
+
+.footer input {
+  width: 93%;
+  height: 90%;
+}
+
+.footer .sendButton {
+  width: 7%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sendButton span {
+  width: 15px;
+  height: 15px;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
